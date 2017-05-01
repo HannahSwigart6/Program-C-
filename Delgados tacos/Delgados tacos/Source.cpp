@@ -17,11 +17,35 @@ int main()
 
 	const double taxRate = 1.075;
 
-	double total;
-	double tacoO, burritoO, drinkO, chipsandSalsaO, fajitasO, chimichangaO, friedicecreamO, flanO, RiceandrefriedBeansO, enchiladosO;
+	double total, iteam = 0;
+	double tacoO = 0, burritoO = 0, drinkO = 0, chipsandSalsaO = 0, fajitasO = 0, chimichangaO = 0, friedicecreamO = 0, flanO = 0, 
+		RiceandrefriedBeansO = 0, enchiladosO = 0;
 	double TotalWithTax;
-	double tacoTotal, burritoTotal, drinkTotal, chipandsalsaTotal, fajitasTotal, chimichangaTotal, friedicecreamTotal, flanTotoal, RiceandrefriedBeansTotal, enchiladosTotoal;
+	double tacoTotal, burritoTotal, drinkTotal, chipandsalsaTotal, fajitasTotal, 
+		chimichangaTotal, friedicecreamTotal, flanTotal, RiceandrefriedBeansTotal, enchiladosTotal;
+	
+	
 	std::cout << "Welcome to Delgados Tacos." << std::endl;
+	
+
+	tacoTotal = tacoP * tacoO;
+	burritoTotal = burritoP * burritoO;
+	drinkTotal = drinkP * drinkO;
+	chipandsalsaTotal = chipandsalsaP * chipsandSalsaO;
+	fajitasTotal = fajitasP * fajitasO;
+	chimichangaTotal = chimichangaP * chimichangaO;
+	friedicecreamTotal = friedicecreamP * friedicecreamO;
+	flanTotal = flanP * flanO;
+	RiceandrefriedBeansTotal = RiceandrefriedBeansP * RiceandrefriedBeansO;
+	enchiladosTotal = enchiladosP * enchiladosO;
+
+	total = tacoTotal + burritoTotal + drinkTotal + chipandsalsaTotal + fajitasTotal + chimichangaTotal + friedicecreamTotal + flanTotal + RiceandrefriedBeansTotal + enchiladosTotal;
+	TotalWithTax = total * taxRate;
+
+	std::cout << "Your total is " << total << "." << std::endl;
+	std::cin >> total;
+	
+	
 
 	std::cout << "Would you like a drink ?" << std::endl;
 	std::cin >> drinkO;
@@ -52,19 +76,5 @@ int main()
 
 	std::cout << "How many enchilados would you like?" << std::endl;
 	std::cin >> enchiladosO;
-	
-	tacoTotal = tacoP * tacoO;
-	burritoTotal = burritoP * burritoO;
-	drinkTotal = drinkP * drinkO;
-	chipandsalsaTotal = chipandsalsaP * chipsandSalsaO;
-	fajitasTotal = fajitasP * fajitasO;
-	chimichangaTotal = chimichangaP * chimichangaO;
-	friedicecreamTotal = friedicecreamP * friedicecreamO;
-	flanTotoal = flanP * flanO;
-	RiceandrefriedBeansTotal = RiceandrefriedBeansP * RiceandrefriedBeansO;
-	enchiladosTotoal = enchiladosP * enchiladosO;
-
-	total = tacoTotal + burritoTotal + drinkTotal + chipandsalsaTotal + fajitasTotal + chimichangaTotal + friedicecreamTotal + flanTotoal + RiceandrefriedBeansTotal + enchiladosTotoal;
-	TotalWithTax = total * taxRate;
 
 }
