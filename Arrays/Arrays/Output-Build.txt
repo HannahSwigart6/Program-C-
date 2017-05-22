@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: Arrays, Configuration: Debug Win32 ------
+1>  Source.cpp
+1>  Arrays.vcxproj -> C:\Users\hs131455\Desktop\C++\Arrays\Debug\Arrays.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
